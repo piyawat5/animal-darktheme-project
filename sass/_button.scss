@@ -1,0 +1,20 @@
+button {
+  background-color: rgba(218, 234, 246, 0.5);
+  cursor: pointer;
+  padding: 6px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  width: 100px;
+
+  margin: 20px;
+}
+.prev,
+.next {
+  margin-top: 3rem;
+}
+button:hover,
+a:hover {
+  transition: 0.3s;
+  color: pink;
+  opacity: 0.9;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | rabbit lover</title>
+    <link rel="stylesheet" href="sass/style.css" />
+  </head>
+  <body>
+    <main id="register">
+      <div class="container-register">
+        <p>
+         <form class="form">
+             <h1>Register</h1>
+             <div class="form-control">
+                 <label for="username">Username:</label>
+                 <input type="text" id="username" placeholder="Enter Your Username" name="">
+                 <small style="display: none" class="error-message1">Usernames can only use 6-12 charactor and alpha-numeric characters. The only numbers in the username have to be at the end. cannot start with the number.</small>
+             </div>
+             <div class="form-control">
+                 <label for="email">Email:</label>
+                 <input type="text" id="email" placeholder="Enter Your Email" name="">
+                 <small style="display: none" class="error-message2">Invalid email</small>
+             </div>
+             <div class="form-control">
+                <label for="password">Password:</label>
+                <input type="password" id="password1" placeholder="Enter Your Password" name="">
+                <small style="display: none" class="error-message3">Password can only use 6-12 charactor and alpha-numeric characters. The only numbers in the password have to be at the end. cannot start with the number.</small>
+            </div>
+            <div class="form-control">
+                <label for="Re-password">Re-password:</label>
+                <input type="password" id="password2" placeholder="Enter Your Re-password" name="">
+                <small style="display: none" class="error-message4">Passwords do not match</small>
+            </div>
+            <button class="go" type="submit">Submit</button>
+         </form>
+        </p>
+      </div>
+    </main>
+
+    <script src="/script/register.js"></script>
+  </body>
+</html>

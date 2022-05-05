@@ -1,0 +1,74 @@
+$primary-color: rgb(53, 71, 87);
+$text-color: rgb(66, 66, 66);
+$text-color-second: rgba(66, 66, 66, 0.7);
+$background: rgb(255, 255, 255);
+$box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+.top {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(185, 212, 233, 0.5);
+  height: 60px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 99;
+  transition: top 0.3s ease-out 0s;
+}
+
+.top.hide {
+  top: -60px;
+}
+
+a {
+  color: $primary-color;
+  margin-left: 3rem;
+  z-index: 100;
+  text-decoration: none;
+}
+.theme-switch-container {
+  position: relative;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+.theme-switch-container span {
+  margin-right: 0.5rem;
+}
+.theme-switch input {
+  visibility: hidden;
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  width: 60px;
+  position: relative;
+}
+.slider {
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+  border-radius: 3rem;
+  background: $primary-color;
+  transition: all 0.4s ease 0s;
+}
+.slider::before {
+  content: "";
+  bottom: 4px;
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  width: 26px;
+  border-radius: 3rem;
+  background: $background;
+  transition: all 0.4s ease 0s;
+}
+input:checked + .slider::before {
+  transform: translateX(25px);
+}
